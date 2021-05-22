@@ -1,0 +1,72 @@
+drops:
+  - name: gold_ore_custom_drop
+    block_id: 14
+    dropped_blocks:
+      - block_id: 266
+        block_name: gold_ingot
+        min_qty: 3
+        max_qty: 5
+        chance: 100
+  - name: iron_ore_custom_drop
+    block_id: 15
+    dropped_blocks:
+      - block_id: 265
+        block_name: iron_ingot
+        min_qty: 3
+        max_qty: 5
+        chance: 100
+  - name: coal_ore_custom_drop
+    block_id: 16
+    dropped_blocks:
+      - block_id: 263
+        block_name: coal
+        min_qty: 4
+        max_qty: 7
+        chance: 100
+  - name: coal_ore_custom_drop
+    block_id: 21
+    dropped_blocks:
+      - block_id: 351
+        data_value: 4    # if a data_value is req. add a key named data_value and set the value, otherwise it's ignored
+        block_name: dye
+        min_qty: 4
+        max_qty: 7
+        chance: 100
+  - name: diamond_ore_custom_drop
+    block_id: 56
+    dropped_blocks:
+      - block_id: 264
+        block_name: diamond
+        min_qty: 4
+        max_qty: 7
+        chance: 100
+  - name: emerald_ore_custom_drop
+    block_id: 129
+    dropped_blocks:
+      - block_id: 388
+        block_name: emerald
+        min_qty: 3
+        max_qty: 5
+        chance: 100
+# WARNING: These are for dev use only (or if you're a nerd whatever floats your boat, nerd)
+log:
+  debug: true
+  dropped_block_info: true
+  dropped_block_fail: true
+  dropped_block_success: true
+
+# Documentation of config options...
+#drops:                     # this is the list of your custom drops, ores are included by default
+# - gold_ore_custom_drop    # can be named whatever you want, just for YOUR ref, but avoid spaces use underscores
+#   block_id: 14            # https://minecraft-ids.grahamedgecombe.com/
+#   dropped_blocks:         # this is a list of what you want to be dropped
+#     - block_id: 266       # first dropped block id, in this case it's a gold ingot
+#       block_name: gold_ingot # the name of the dropped block, just make sure the id is right but this makes it easier to read
+#       min_qty: 3          # the lowest number of the block to drop (randomly between min and max)
+#       max_qty: 5          # if you want it to ALWAYS be a specific qty just set both to the same value
+#       chance: 100         # the percent chance for this to happen, 100 = always, 0 = never, 50 = half of the time, etc.
+#     - block_id: 371       # this is a rare chance for a gold nugget to also drop (1.8% of the time)
+#       block_name: gold_nugget # name, again for readability
+#       min_qty: 1          # this is a chance to get 1 nugget on the gold_ore block breaking so min is 1
+#       max_qty: 1          # and the max is 1 (so it's always 1)
+#       chance: 1.8         # 1.8% of the time this will happen (so not often at all, about 2 in a 1000

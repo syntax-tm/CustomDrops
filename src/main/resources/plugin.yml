@@ -1,0 +1,6 @@
+name: CustomDrops
+main: io.github.treymorris.CustomDrops.CustomDrops
+version: 0.0.13
+api-version: 1.14
+author: treymorris
+website: https://github.com/treymorris
